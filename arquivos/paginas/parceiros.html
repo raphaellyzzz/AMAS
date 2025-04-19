@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/logo.jpg">
+    <title>Nossos Parceiros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        div.menu {
+            background-color: white;
+            position:fixed;
+            display: flex;
+            align-items: center;
+            justify-content:flex-start;
+            width: 100%;
+            top: 0;
+            padding: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        img.logo{
+            width: 125px;
+            height: 90px;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a.menu-link {
+            color: black;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        nav a.menu-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            background-color: rgb(190, 230, 248);
+            text-align: center;
+            color: #333;
+            width: 100%;
+            top: 80px;
+            height: 80px;
+            padding-top: 120px;
+        }
+
+        #parceiros-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .parceiro {
+            flex: 0 0 33.33%; /* Cada membro ocupa 1/3 da largura */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .parceiro-imagem {
+            height: 200px;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        .info {
+            text-align: center;
+        }
+
+        .nome {
+            font-weight: bold;
+        }
+
+        .especificar {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <img class="logo" src="../imagens/logo.jpg" alt="Logotipo AMAS LGBT">
+        <nav>
+            <ul>
+                <li><a class="menu-link" href="../../index.html">Home</a></li>
+                    <li><a class="menu-link" href="../../index.html">A associação</a></li>
+                    <li><a class="menu-link" href="../paginas/Post.html">Blog</a></li>
+                    <li><a class="menu-link" href="../paginas/membros.html">Equipe</a></li>
+                    <li><a class="menu-link" href="../paginas/parceiros.html">Parceiros</a></li> 
+                    <li><a class="menu-link" href="../paginas/Datascomemorativas.html">Datas Importantes</a></li>
+                    <li><a class="menu-link" href="../paginas/contatos.html">Contatos</a></li>
+                    <li><a class="menu-link" href="https://denuncie.rugidolgbtqi.com.br">Denuncie</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Conheça nossos Parceiros</h1>
+    <div id="parceiros-container">
+        <div class="parceiro">
+            <img src="../paginas/logosParceiros/logo_rede.png" alt="rede" class="parceiro-imagem" width= 275px>
+            <div class="info">
+                <span class="nome">Rede LGBT: </span>
+                <span class="especificar">É uma ONG que tem o intuito de fortalecer os coletivos do interior de Pernambuco. 
+                    Nasceu da necessidade de interiorizar as políticas LGBT no estado de Pernambuco.</span>
+            </div>
+        </div>
+        <div class="parceiro">
+            <img src="../paginas/logosParceiros/logo_elas.png" alt="elas" class="parceiro-imagem">
+            <div class="info">
+                <span class="nome">elas+: </span>
+                <span class="especificar">é uma ONG que arrecada fundos para o apoio coletivos  
+                    de mulheres, pessoas trans e lideranças feministas de todo o Brasil.</span>
+            </div>
+        </div>
+        <div class="parceiro">
+            <img src="../paginas/logosParceiros/logo_cores.jpg" alt=" cores" class="parceiro-imagem">
+            <div class="info">
+                <span class="nome">CORES: </span>
+                <span class="especificar">O movimento CORES é ativo em prol  da Defesa da Cidadania 
+                    e do Orgulho LGBTQIA+ de Petrolina</span>
+            </div>
+        </div>
+        <!-- Adicione mais membros aqui -->
+    </div>
+</body>
+</html>

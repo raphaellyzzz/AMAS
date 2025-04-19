@@ -1,0 +1,160 @@
+/* Reset de Margens e Padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos do Header e Menu */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+}
+
+div.menu {
+    background-color: white;
+    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+    top: 0;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+img.logo{
+    width: 125px;
+    height: 90px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a.menu-link {
+    color: black;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+nav a.menu-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o Main */
+main {
+    padding-top: 120px; /* Ajuste para o header fixo */
+}
+
+section {
+    padding: 2em;
+    margin: 20px 0;
+}
+
+/* Estilos para Imagens na Home */
+#home img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para a Seção de Associação */
+#assoc {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+div.hist {
+    margin: 0 100px;
+    background-color: rgb(245, 207, 213);
+    padding: 20px;
+}
+
+h2.hist {
+    text-align: center;
+    padding-top: 20px;
+}
+
+p.hist {
+    padding: 30px;
+    text-align: justify;
+}
+
+/* Estilos das Seções Internas */
+h2 {
+    text-align: center;
+}
+
+section {
+    background-color: #d6d5d5;
+}
+
+/* Estilos para a Seção de Denúncias */
+#denuncie {
+    background-color: rgb(188, 214, 206);
+    text-align: center;
+    padding: 50px 0;
+}
+
+h2.denuncia {
+    margin: 0;
+}
+
+p.app {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 50px;
+}
+
+/* Estilos do Container de Contador */
+#container-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(253, 170, 226);
+
+    & h3 {
+        color: #8f8d8e;
+        font-size: 140%;
+    }
+
+    & iframe {
+        margin: 20px 0px;
+        padding: 20px;
+        width: 80%;
+    }
+}
+
+/* Estilos do Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

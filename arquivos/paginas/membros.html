@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/logo.jpg">
+    <title>Nossa Equipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        div.menu {
+            background-color: white;
+            position:fixed;
+            display: flex;
+            align-items: center;
+            justify-content:flex-start;
+            width: 100%;
+            top: 0;
+            padding: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        img.logo{
+            width: 125px;
+            height: 90px;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a.menu-link {
+            color: black;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        nav a.menu-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            background-color: rgb(190, 230, 248);
+            text-align: center;
+            color: #333;
+            width: 100%;
+            top: 80px;
+            height: 80px;
+            padding-top: 120px;
+        }
+
+        #equipe-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .membro {
+            flex: 0 0 33.33%; /* Cada membro ocupa 1/3 da largura */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .equipe-imagem {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        .info {
+            text-align: center;
+        }
+
+        .nome {
+            font-weight: bold;
+        }
+
+        .cargo {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <img class="logo" src="../imagens/logo.jpg" alt="Logotipo AMAS LGBT">
+        <nav>
+            <ul>
+                <li><a class="menu-link" href="../../index.html">Home</a></li>
+                    <li><a class="menu-link" href="../../index.html">A associação</a></li>
+                    <li><a class="menu-link" href="../paginas/Post.html">Blog</a></li>
+                    <li><a class="menu-link" href="../paginas/membros.html">Equipe</a></li>
+                    <li><a class="menu-link" href="../paginas/parceiros.html">Parceiros</a></li>
+                    <li><a class="menu-link" href="../paginas/Datascomemorativas.html">Datas Importantes</a></li>
+                    <li><a class="menu-link" href="../paginas/contatos.html">Contatos</a></li>
+                    <li><a class="menu-link" href="https://denuncie.rugidolgbtqi.com.br">Denuncie</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Conheça nossa Equipe</h1>
+    <div id="equipe-container">
+        <div class="membro">
+            <img src="../paginas/membros/presidente.jpg" alt="presidente" class="equipe-imagem">
+            <div class="info">
+                <span class="nome">Hewrya Lima: </span>
+                <span class="cargo">Presidente</span>
+            </div>
+        </div>
+        <div class="membro">
+            <img src="../paginas/membros/vice_presidente.jpg" alt="vice_presidente" class="equipe-imagem">
+            <div class="info">
+                <span class="nome">Jonatha Raphael: </span>
+                <span class="cargo">Vice-presidente</span>
+            </div>
+        </div>
+        <div class="membro">
+            <img src="../paginas/membros/secretária_geral.jpg" alt="secretária_geral" class="equipe-imagem">
+            <div class="info">
+                <span class="nome">Gil Marcyelly: </span>
+                <span class="cargo">Secretária geral</span>
+            </div>
+        </div>
+        <div class="membro">
+            <img src="../paginas/membros/tesoureira.jpg" alt="tesoureira" class="equipe-imagem">
+            <div class="info">
+                <span class="nome">Antônia Luize: </span>
+                <span class="cargo">Tesoureira</span>
+            </div>
+        </div>
+        <!-- Adicione mais membros aqui -->
+    </div>
+</body>
+</html>

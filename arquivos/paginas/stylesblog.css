@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1b3e1d;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    top: 80px;
+            height: 80px;
+            padding-top: 120px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    top: 80px;
+            height: 80px;
+            padding-top: 120px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+    top: 80px;
+            height: 80px;
+            padding-top: 120px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    top: 80px;
+            height: 80px;
+            padding-top: 120px;
+}
+
+div.menu {
+    background-color: white;
+    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+    top: 0;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+img.logo{
+    width: 125px;
+    height: 90px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a.menu-link {
+    color: black;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+nav a.menu-link:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+    top: 80px;
+    height: 80px;
+    padding-top: 120px;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.news-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+.news-item img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.news-item h4 {
+    margin: 5px;
+    color: hsl(0, 68%, 40%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+form label {
+    margin: 5px 0;
+}
+
+form input, form button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 200px;
+}
+
+/* Estilos para Eventos e Atividades */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text-section {
+    font-size: 20px;
+    flex: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #5cf8aa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 40%;
+    width: 90%; /* Aumenta a largura dos quadros */
+    max-width: 800px; /* Aumenta a largura máxima dos quadros */
+    margin: 10px auto;
+    transition: transform 0.3s ease;
+    position: relative; /* Adiciona posição relativa */
+    z-index: 1; /* Define a ordem de empilhamento */
+}
+
+.event:hover {
+    transform: scale(1.05);
+}
+
+.event-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.event-number {
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.event-details h2 {
+    padding-top: 0%;
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.event-details p {
+    margin: 5px 0 0;
+    text-align: center;
+    color: #666;
+}
+
+.info-lgbtfobia {
+
+    background-color: #f9f9f9;
+    border: 1px solid #ddd; /* Adicione uma borda */
+    border-radius: 5px; /* Arredonde os cantos da caixa */
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%; /* Completa a página horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Adiciona posição relativa */
+    z-index: 2; /* Define a ordem de empilhamento */
+}
+
+#info-lgbtfobia h2 {
+    font-size: 1.5em;
+    color: #333; /* Cor do texto */
+    text-align: center;
+}
+
+#info-lgbtfobia p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555; /* Cor do texto */
+    text-align:justify;
+    width: 97%;
+}
+
+footer {
+    background-color: #1b3e1d;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 1;
+}
