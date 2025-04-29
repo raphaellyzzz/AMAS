@@ -82,7 +82,7 @@ nav a.menu-link:hover {
 
 h2 {
     text-align: center;
-    color: #4CAF50;
+    color: #000000;
     top: 80px;
     height: 80px;
     padding-top: 120px;
@@ -158,7 +158,7 @@ form input, form button {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    background-color: #5cf8aa;
+    background-color: #bee4f8;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -219,33 +219,68 @@ form input, form button {
 .info-lgbtfobia {
 
     background-color: #f9f9f9;
-    border: 1px solid #ddd; /* Adicione uma borda */
-    border-radius: 5px; /* Arredonde os cantos da caixa */
+    border: 1px solid #ddd;
+    border-radius: 5px;
     padding: 20px;
     margin-top: 10px;
-    width: 100%; /* Completa a página horizontalmente */
+    width: 100%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative; /* Adiciona posição relativa */
     z-index: 2; /* Define a ordem de empilhamento */
 }
 
 #info-lgbtfobia h2 {
-    font-size: 1.5em;
-    color: #333; /* Cor do texto */
+    font-size: 2.1em;
+    color: #000000;
     text-align: center;
 }
 
 #info-lgbtfobia p {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #555; /* Cor do texto */
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #000000;
     text-align:justify;
     width: 97%;
 }
 
+.info-lgbtfobia .content {
+    display: flex;
+    align-items: flex-start; /* Alinha o texto e a imagem no topo */
+    gap: 20px; /* Espaçamento entre o texto e a imagem */
+    flex-direction: row-reverse; /* Coloca a imagem no lado esquerdo */
+}
+
+.info-lgbtfobia {
+    text-align: center; /* Centraliza o texto e o título */
+}
+
+.info-lgbtfobia .content {
+    display: flex;
+    flex-direction: column; /* Empilha o texto e a imagem verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+.info-lgbtfobia .text {
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px; 
+    background-color: #f9f9f9; /* Cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    width: 90%; /* Reduz a largura horizontal do quadrado */
+    max-width: 800px; /* Define uma largura máxima */
+    text-align: center; /* Centraliza o texto dentro do quadrado */
+}
+
+.info-lgbtfobia img {
+    max-width: 300px; /* Define um tamanho máximo para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
 footer {
-    background-color: #1b3e1d;
-    color: white;
+    background-color: #323131;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 5px 0;
     position: absolute;
