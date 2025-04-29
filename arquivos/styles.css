@@ -4,6 +4,11 @@ body, h1, h2, p {
     padding: 0;
 }
 
+:root {
+    --rosa-geral: #f8ccd4;
+    --azul-geral: #fefeff;
+}
+
 /* Estilos Gerais */
 body {
     font-family: Arial, sans-serif;
@@ -13,8 +18,8 @@ body {
 }
 /* Estilos do Header e Menu */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: black;
+    color: white;
     text-align: center;
     position: relative;
     z-index: 1000;
@@ -40,6 +45,7 @@ img.logo{
     margin-right: 20px;
 }
 
+/* nav bar */
 nav ul {
     list-style: none;
     margin: 0;
@@ -54,11 +60,16 @@ nav li {
 nav a.menu-link {
     color: black;
     text-decoration: none;
-    padding: 0 15px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a.menu-link:hover {
-    text-decoration: underline;
+    background-color: var(--rosa-geral);
+    border-radius: 20px; 
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* Estilos para o Main */
@@ -87,7 +98,7 @@ section {
     margin-top: -4px;
     align-items: center;
     justify-content: center;
-    background-color: #f8ccd4;
+    background-color: var(--rosa-geral);
 }
 
 div.hist {
@@ -106,13 +117,18 @@ p.hist {
     text-align: justify;
 }
 
+.historia{
+    width: 115%;
+    height: 115%;
+}
+
 /* Estilos das Seções Internas */
 h2 {
     text-align: center;
 }
 
 section {
-    background-color: #fefeff;
+    background-color: var(--azul-geral);
 }
 
 /* Estilos para a Seção de Denúncias */
@@ -142,7 +158,7 @@ p.app {
     margin-right: -30px;
     width: 100%;
     padding: 33px;
-    background-color: #f8ccd4;
+    background-color: var(--rosa-geral);
 
     & h3 {
         color: #000000;
@@ -159,8 +175,8 @@ p.app {
 
 /* Estilos do Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: black;
+    color: white;
     text-align: center;
     padding: 1em;
     padding-right: 49px;
