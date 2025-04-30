@@ -1,3 +1,8 @@
+/*rolagem suave para âncora*/ 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reset de Margens e Padding */
 body, h1, h2, p {
     margin: 0;
@@ -97,10 +102,10 @@ section {
 #assoc {
     display: flex;
     flex-direction: row;
-    margin-top: -4px;
     align-items: center;
     justify-content: center;
     background-color: var(--rosa-geral);
+    scroll-margin-top: 100px; /* Corrige âncora com header fixo */
 }
 
 div.hist {
