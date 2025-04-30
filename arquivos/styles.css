@@ -12,9 +12,10 @@ body, h1, h2, p {
 /* Estilos Gerais */
 body {
     font-family: Arial, sans-serif;
-    margin: auto;
-    max-width: 1840px;
+    margin: 0;
+    max-width: 100%;
     padding: 0;
+    overflow-x: hidden;
 }
 /* Estilos do Header e Menu */
 header {
@@ -36,10 +37,11 @@ div.menu {
     padding: 0%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 999;
-    margin-left: -32px;
+    margin-left: 0px;
 }
 
 img.logo{
+    margin-left: 10px;
     width: 125px;
     height: 90px;
     margin-right: 20px;
