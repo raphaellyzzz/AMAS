@@ -12,6 +12,7 @@ body, h1, h2, p {
 :root {
     --rosa-geral: #f8ccd4;
     --azul-geral: #fefeff;
+    --cinza: #333;
 }
 
 /* Estilos Gerais */
@@ -197,4 +198,103 @@ footer {
     text-align: center;
     position: relative;
     top: 20px;
+}
+
+/* codigos de parceiros abaixo */
+
+img.logo{
+    width: 125px;
+    height: 90px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a.menu-link {
+    color: black;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+nav a.menu-link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    background-color: rgb(190, 230, 248);
+    text-align: center;
+    color: #333;
+    width: 100%;
+    top: 80px;
+    height: 80px;
+    padding-top: 120px;
+}
+
+#parceiros-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto;
+    gap: 40px 30px; 
+}
+
+.parceiro {
+    flex: 0 0 25%;
+    text-align: center;
+    padding: 20px;
+    max-width: 50%; 
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.09);
+    transition: transform 0.2s ease;
+}
+
+.parceiro:hover {
+    transform: translateY(-5px);
+}
+
+.parceiro-imagem {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin: 0 auto 10px;
+    display: block;
+
+}
+
+.parceiro h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--cinza);
+}
+
+.parceiro p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+.info {
+    text-align: center;
+}
+
+.nome {
+    font-weight: bold;
+}
+
+.especificar {
+    color: #777;
 }
