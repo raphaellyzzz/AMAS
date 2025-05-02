@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 /*rolagem suave para âncora*/ 
 html {
     scroll-behavior: smooth;
@@ -18,6 +19,7 @@ body, h1, h2, p {
 /* Estilos Gerais */
 body {
     font-family: Arial, sans-serif;
+    font-weight: bold;
     margin: 0;
     max-width: 100%;
     padding: 0;
@@ -74,6 +76,20 @@ nav a.menu-link {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.menu ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu ul li a:hover, .menu ul li a.active {
+    background-color: #f8ccd4;
+    color: white;
+}
+
 nav a.menu-link:hover {
     background-color: var(--rosa-geral);
     border-radius: 20px; 
@@ -97,22 +113,27 @@ section {
     width: 100%;
     margin-left: 2px;
     height: auto;
+    margin-top: -121px;
+}
+
+#fundo-home {
+    background-image: url('fundo-home.png');
+    
 }
 
 /* Estilos para a Seção de Associação */
 #assoc {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--rosa-geral);
-    scroll-margin-top: 100px; /* Corrige âncora com header fixo */
+    position: absolute;
+    top: 150%; 
+    left: 45%; 
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
 }
 
 div.hist {
-    margin: 0 100px;
-    background-color: rgb(245, 207, 213);
-    padding: 20px;
+    margin: 100px;
+    padding: 110px;
 }
 
 h2.hist {
@@ -126,8 +147,9 @@ p.hist {
 }
 
 .historia{
-    width: 115%;
+    width: 150%;
     height: 115%;
+    right: 190px;
 }
 
 /* Estilos das Seções Internas */
@@ -135,16 +157,17 @@ h2 {
     text-align: center;
 }
 
-section {
-    background-color: var(--azul-geral);
-}
-
 /* Estilos para a Seção de Denúncias */
 #denuncie {
-    background-color: rgb(188, 214, 206);
     text-align: center;
-    padding: 50px 0;
     margin-right: -32px;
+    position: absolute; 
+    top: 375%; 
+    left: 51%;
+    transform: translate(-50%, -50%); 
+    z-index: 10; 
+    text-align: center; 
+    width: 80%;
 }
 
 h2.denuncia {
@@ -162,15 +185,22 @@ p.app {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    margin-right: -30px;
-    width: 100%;
     padding: 33px;
     background-color: var(--rosa-geral);
+    position: absolute; 
+    top: 270%; 
+    left: 52%;
+    transform: translate(-50%, -50%); 
+    z-index: 10; 
+    text-align: center; 
+    width: 80%;
+    border-radius: 100px;
+    }
 
     & h3 {
-        color: #000000;
-        font-size: 200%;
+        color: #363737;
+        font-size: 300%;
+        font-family: "Lilita One", sans-serif;
         padding-top: 30px;
     }
 
@@ -179,11 +209,10 @@ p.app {
         padding: 20px;
         width: 80%;
     }
-}
 
 /* Estilos do Footer */
 footer {
-    background-color: black;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 1em;
@@ -193,6 +222,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 .endereco {
     margin-top: 10px;
     text-align: center;
@@ -226,7 +256,7 @@ nav a.menu-link {
 }
 
 nav a.menu-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 h1 {

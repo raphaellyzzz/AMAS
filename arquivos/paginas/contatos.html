@@ -50,7 +50,21 @@
         }
 
         nav a.menu-link:hover {
-            text-decoration: underline;
+            text-decoration: none;
+        }
+
+        .menu ul li a {
+        text-decoration: none;
+        color: #555;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 20px;
+        transition: background-color 0.3s, color 0.3s;
+        }
+
+        .menu ul li a:hover, .menu ul li a.active {
+        background-color: #f8ccd4;
+        color: white;
         }
 
         .container {
