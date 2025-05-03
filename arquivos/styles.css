@@ -42,14 +42,12 @@ div.menu {
     justify-content:flex-start;
     width: 100%;
     top: 0;
-    padding: 0%;
+    padding: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-    margin-left: 0px;
+    z-index: 1000;
 }
 
 img.logo{
-    margin-left: 10px;
     width: 125px;
     height: 90px;
     margin-right: 20px;
@@ -64,7 +62,7 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px;
+    margin-right: 0 10px;
 }
 
 .menu ul li {
@@ -229,6 +227,14 @@ footer {
     text-align: center;
     position: relative;
     top: 20px;
+}
+
+.rua {
+    font-size: 20px;
+}
+
+.numero{
+    font-size: 20px;
 }
 
 /* codigos de parceiros abaixo */
