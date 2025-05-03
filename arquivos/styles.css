@@ -335,3 +335,60 @@ h1 {
 .especificar {
     color: #777;
 }
+
+header {
+    background: #afcfdd;
+    color: #fff;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+header h1 {
+    color: #000;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+}
+.info-contatos {
+    background: #afcfdd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.info-contatos h2 {
+    margin-top: 0;
+}
+.info-contatos p {
+    margin: 5px 0;
+}
+.form-container {
+    background: #afcfdd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container form input,
+.form-container form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container form button {
+    padding: 10px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-container form button:hover {
+    background: #555;
+}
