@@ -67,6 +67,11 @@ nav li {
     margin-right: 20px;
 }
 
+.menu ul li {
+    margin: 1px;
+}
+
+
 nav a.menu-link {
     color: black;
     text-decoration: none;
@@ -212,15 +217,11 @@ p.app {
 
 /* Estilos do Footer */
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 1em;
-    padding-right: 49px;
-    margin-left: -33px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .endereco {
