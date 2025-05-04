@@ -3,133 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../imagens/logo.jpg">
+    <link rel="stylesheet" href="../styles.css">
     <title>Contatos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        div.menu {
-            background-color: white;
-            position:fixed;
-            display: flex;
-            align-items: center;
-            justify-content:flex-start;
-            width: 100%;
-            top: 0;
-            padding: 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            z-index: 999;
-        }
-
-        img.logo{
-            width: 125px;
-            height: 90px;
-            margin-right: 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav li {
-            margin-right: 20px;
-        }
-
-        nav a.menu-link {
-            color: black;
-            text-decoration: none;
-            padding: 0 15px;
-        }
-
-        nav a.menu-link:hover {
-            text-decoration: none;
-        }
-
-        .menu ul li a {
-        text-decoration: none;
-        color: #555;
-        font-weight: bold;
-        padding: 5px 10px;
-        border-radius: 20px;
-        transition: background-color 0.3s, color 0.3s;
-        }
-
-        .menu ul li a:hover, .menu ul li a.active {
-        background-color: #f8ccd4;
-        color: white;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #afcfdd;
-            color: #fff;
-            padding-top: 120px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header h1 {
-            color: #000;
-            text-align: center;
-            margin: 0;
-            font-size: 24px;
-        }
-        .info-contatos {
-            background: #afcfdd;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .info-contatos h2 {
-            margin-top: 0;
-        }
-        .info-contatos p {
-            margin: 5px 0;
-        }
-        .form-container {
-            background: #afcfdd;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .form-container form {
-            display: flex;
-            flex-direction: column;
-        }
-        .form-container form input,
-        .form-container form textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-container form button {
-            padding: 10px;
-            font-size: 16px;
-            background: #333;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .form-container form button:hover {
-            background: #555;
-        }
-    </style> 
     <script>
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
@@ -160,38 +35,40 @@ document.addEventListener('DOMContentLoaded', function() {
         <nav>
             <ul>
                 <li><a class="menu-link" href="../../index.html">Início</a></li>
-                    <li><a class="menu-link" href="../../index.html">Associação</a></li>
-                    <li><a class="menu-link" href="../paginas/blog.html">Blog</a></li>
-                    <li><a class="menu-link" href="../paginas/membros.html">Equipe</a></li>
-                    <li><a class="menu-link" href="../paginas/parceiros.html">Parceiros</a></li>
-                    <li><a class="menu-link" href="../paginas/Datascomemorativas.html">Datas Importantes</a></li>
-                    <li><a class="menu-link" href="../paginas/contatos.html">Contatos</a></li>
-                    <li><a class="menu-link" href="https://denuncie.rugidolgbtqi.com.br">Denuncie</a></li>
+                <li><a class="menu-link" href="../../index.html#assoc">Associação</a></li>
+                <li><a class="menu-link" href="blog.html">Blog</a></li>
+                <li><a class="menu-link" href="membros.html">Equipe</a></li>
+                <li><a class="menu-link" href="parceiros.html">Parceiros</a></li>
+                <li><a class="menu-link" href="Datascomemorativas.html">Datas Importantes</a></li>
+                <li><a class="menu-link" href="contatos.html">Contatos</a></li>
+                <li><a class="menu-link" href="https://denuncie.rugidolgbtqi.com.br/">Denuncie</a></li>
             </ul>
         </nav>
     </div>
-    <header>
-        <h1>ENTRE EM CONTATO CONOSCO</h1>
-    </header>
-    <div class="container">
-        <div class="info-contatos">
-            <h2>Informações de Contato</h2>
-            <p><strong>E-mail:</strong> <a href="mailto:amaslgbt@gmail.com">amaslgbt@gmail.com</a></p>
-            <p><strong>Telefone:</strong> (81) 99775-5219</p>
-            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/amaslgbt/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA%3D%3D">@amaslgbt</a></p>
-            <p><strong>Endereço:</strong> Rua A, nº 31A, Cohab I, 55540-000, Palmares-PE</p>
-            <p><strong>Formulário de Cadastramento:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMGfDnJiyOgD9WX5IcCdhi4tBFpq-IdbqbPxLwciBbU4o_1A/viewform">Cadastre-se</a></p>
-        </div>
-        <div class="form-container">
-            <h2>Envie uma Mensagem</h2>
-            <form id="contactForm" action="#" method="post">
-                <input type="text" name="nome" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="E-mail" required>
-                <input type="number" name="telefone" placeholder="Telefone" required>
-                <input type="text" name="cidade" placeholder="Cidade" required>
-                <textarea name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+    <div class="main-content"
+        <header>
+            <h1>ENTRE EM CONTATO CONOSCO</h1>
+        </header>
+        <div class="container">
+            <div class="info-contatos">
+                <h2>Informações de Contato</h2>
+                <p><strong>E-mail:</strong> <a href="mailto:amaslgbt@gmail.com">amaslgbt@gmail.com</a></p>
+                <p><strong>Telefone:</strong> (81) 99775-5219</p>
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/amaslgbt/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA%3D%3D">@amaslgbt</a></p>
+                <p><strong>Endereço:</strong> Rua A, nº 31A, Cohab I, 55540-000, Palmares-PE</p>
+                <p><strong>Formulário de Cadastramento:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMGfDnJiyOgD9WX5IcCdhi4tBFpq-IdbqbPxLwciBbU4o_1A/viewform">Cadastre-se</a></p>
+            </div>
+            <div class="form-container">
+                <h2>Envie uma Mensagem</h2>
+                <form id="contactForm" action="#" method="post">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="number" name="telefone" placeholder="Telefone" required>
+                    <input type="text" name="cidade" placeholder="Cidade" required>
+                    <textarea name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
     </div>
     <script src="/arquivos/paginas/scriptForms.js"></script>
