@@ -237,7 +237,7 @@ footer {
     font-size: 20px;
 }
 
-/* codigos de parceiros abaixo */
+/* parceiros */
 
 img.logo{
     width: 125px;
@@ -337,17 +337,17 @@ h1 {
     color: #777;
 }
 
+/* form */
+
 .mensagem-sucesso {
-    background-color: #d4edda; /* Verde claro */
-    color: #155724; /* Verde escuro */
+    background-color: #d4edda; 
+    color: #155724; 
     padding: 15px;
     margin-top: 20px;
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
 }
-
-/* form */
 
 .contato {
     padding: 60px 20px; 
@@ -372,7 +372,7 @@ h1 {
     border-radius: 8px;
     border: 1px solid #e0e0e0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    min-width: 300px; /* Garante que não quebre em telas maiores */
+    min-width: 300px; 
 }
 
 .contato-info h2,
@@ -438,3 +438,57 @@ h1 {
     background-color: var(--rosa-geral);
 }
 
+/* membros */
+
+#equipe-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.membro {
+    flex: 0 0 33.33%; 
+    text-align: center;
+    padding: 20px;
+}
+
+.equipe-imagem {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.info {
+    text-align: center;
+}
+
+.nome {
+    font-weight: bold;
+}
+
+.cargo {
+    color: #777;
+}
+
+#rodape-membros{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 12.5%; /* solução paliativa, arrumar quando tiver tempo */
+}
+
+#conheca-equipe{
+    background-color: var(--rosa-geral);
+    text-align: center;
+    color: var(--cinza);
+    width: 100%;
+    top: 80px;
+    height: 80px;
+    padding-top: 120px;
+}
