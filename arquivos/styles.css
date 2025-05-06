@@ -12,7 +12,7 @@ body, h1, h2, p {
 
 :root {
     --rosa-geral: #f8ccd4;
-    --azul-geral: #fefeff;
+    --branco: #fefeff;
     --cinza: #333;
 }
 
@@ -48,6 +48,7 @@ div.menu {
 }
 
 img.logo{
+    margin-left: 10px;
     width: 125px;
     height: 90px;
     margin-right: 20px;
@@ -237,7 +238,7 @@ footer {
     font-size: 20px;
 }
 
-/* codigos de parceiros abaixo */
+/* parceiros */
 
 img.logo{
     width: 125px;
@@ -283,6 +284,7 @@ h1 {
     max-width: 800px;
     margin: 20px auto;
     gap: 40px 30px; 
+    margin-top: 110px;
 }
 
 .parceiro {
@@ -336,59 +338,158 @@ h1 {
     color: #777;
 }
 
-header {
-    background: #afcfdd;
-    color: #fff;
-    min-height: 70px;
-    border-bottom: #77aaff 3px solid;
-}
-header h1 {
-    color: #000;
+/* form */
+
+.mensagem-sucesso {
+    background-color: #d4edda; 
+    color: #155724; 
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
     text-align: center;
-    margin: 0;
-    font-size: 24px;
+    font-weight: bold;
 }
-.info-contatos {
-    background: #afcfdd;
+
+.contato {
+    padding: 60px 20px; 
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 40px auto; 
+    margin-top: 50px;
+}
+
+.contato-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contato-info,
+#contato-form {
+    flex: 1 1 45%;
     padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    min-width: 300px; 
 }
-.info-contatos h2 {
-    margin-top: 0;
+
+.contato-info h2,
+#contato-form h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: black;
 }
-.info-contatos p {
-    margin: 5px 0;
+
+.contato-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.8;
 }
-.form-container {
-    background: #afcfdd;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+.contato-info a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
-.form-container form {
+
+.contato-info a:hover {
+    color: #004d40;
+}
+
+#contato-form form {
     display: flex;
     flex-direction: column;
+    gap: 12px;
 }
-.form-container form input,
-.form-container form textarea {
-    margin-bottom: 10px;
+
+#contato-form input,
+#contato-form textarea {
     padding: 10px;
-    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
 }
-.form-container form button {
-    padding: 10px;
+
+#contato-form input:focus,
+#contato-form textarea:focus {
+    border-color: #00897b;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 137, 123, 0.3);
+}
+
+#contato-form button {
+    background-color: #fa9eaf;
+    color: white;
+    padding: 12px 20px;
     font-size: 16px;
-    background: #333;
-    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
-.form-container form button:hover {
-    background: #555;
+
+#contato-form button:hover {
+    background-color: var(--rosa-geral);
+}
+
+/* membros */
+
+#equipe-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.membro {
+    flex: 0 0 33.33%; 
+    text-align: center;
+    padding: 20px;
+}
+
+.equipe-imagem {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.info {
+    text-align: center;
+}
+
+.nome {
+    font-weight: bold;
+}
+
+.cargo {
+    color: #777;
+}
+
+#rodape-membros{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 12.5%; /* solução paliativa, arrumar quando tiver tempo */
+}
+
+#conheca-equipe{
+    background-color: var(--rosa-geral);
+    text-align: center;
+    color: var(--cinza);
+    width: 100%;
+    top: 80px;
+    height: 80px;
+    padding-top: 120px;
 }

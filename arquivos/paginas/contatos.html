@@ -5,72 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Contatos</title>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contactForm');
-
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const nome = form.nome.value.trim();
-        const email = form.email.value.trim();
-        const telefone = form.telefone.value.trim();
-        const cidade = form.cidade.value.trim();
-        const mensagem = form.mensagem.value.trim();
-
-        if (nome && email && telefone && cidade && mensagem) {
-            alert('Mensagem enviada com sucesso!');
-            form.reset();
-        } else {
-            alert('Por favor, preencha todos os campos.');
-        }
-    });
-});
-        
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init('WpJGiiBZ_Haa-1s9B'); //key encontrada em account do emailjs
+      })();
     </script>
 </head>
-<body>
-    <div class="menu">
-        <img class="logo" src="../imagens/logo.jpg" alt="Logotipo AMAS LGBT">
-        <nav>
-            <ul>
-                <li><a class="menu-link" href="../../index.html">Início</a></li>
-                <li><a class="menu-link" href="../../index.html#assoc">Associação</a></li>
-                <li><a class="menu-link" href="blog.html">Blog</a></li>
-                <li><a class="menu-link" href="membros.html">Equipe</a></li>
-                <li><a class="menu-link" href="parceiros.html">Parceiros</a></li>
-                <li><a class="menu-link" href="Datascomemorativas.html">Datas Importantes</a></li>
-                <li><a class="menu-link" href="contatos.html">Contatos</a></li>
-                <li><a class="menu-link" href="https://denuncie.rugidolgbtqi.com.br/">Denuncie</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="main-content"
-        <header>
-            <h1>ENTRE EM CONTATO CONOSCO</h1>
-        </header>
-        <div class="container">
-            <div class="info-contatos">
-                <h2>Informações de Contato</h2>
-                <p><strong>E-mail:</strong> <a href="mailto:amaslgbt@gmail.com">amaslgbt@gmail.com</a></p>
-                <p><strong>Telefone:</strong> (81) 99775-5219</p>
-                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/amaslgbt/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA%3D%3D">@amaslgbt</a></p>
-                <p><strong>Endereço:</strong> Rua A, nº 31A, Cohab I, 55540-000, Palmares-PE</p>
-                <p><strong>Formulário de Cadastramento:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMGfDnJiyOgD9WX5IcCdhi4tBFpq-IdbqbPxLwciBbU4o_1A/viewform">Cadastre-se</a></p>
-            </div>
-            <div class="form-container">
-                <h2>Envie uma Mensagem</h2>
-                <form id="contactForm" action="#" method="post">
-                    <input type="text" name="nome" placeholder="Nome" required>
-                    <input type="email" name="email" placeholder="E-mail" required>
-                    <input type="number" name="telefone" placeholder="Telefone" required>
-                    <input type="text" name="cidade" placeholder="Cidade" required>
-                    <textarea name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
+<body class="contato-body">
+    <header>
+        <div class="menu">
+            <img class="logo" src="../imagens/logo.jpg" alt="Logotipo AMAS LGBT">
+            <nav>
+                <ul>
+                    <li><a class="menu-link" href="../../index.html#home">Início</a></li>
+                    <li><a class="menu-link" href="../../index.html#assoc">Associação</a></li>
+                    <li><a class="menu-link" href="../paginas/blog.html">Blog</a></li>
+                    <li><a class="menu-link" href="../paginas/membros.html">Equipe</a></li>
+                    <li><a class="menu-link" href="../paginas/parceiros.html">Parceiros</a></li>
+                    <li><a class="menu-link" href="../paginas/Datascomemorativas.html">Datas Importantes</a></li>
+                    <li><a class="menu-link" href="../paginas/contatos.html">Contatos</a></li>
+                    <li><a class="menu-link" href="https://denuncie.rugidolgbtqi.com.br/">Denuncie</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    <script src="/arquivos/paginas/scriptForms.js"></script>
+    </header>
+
+    <main class="contato">
+        <div class="contato-wrapper">
+          <div class="contato-info">
+            <h2>Informações</h2>
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:amaslgbt@gmail.com">amaslgbt@gmail.com</a></li>
+              <li><strong>Telefone:</strong> (81) 99775-5219</li>
+              <li><strong>Instagram:</strong> <a href="https://www.instagram.com/amaslgbt/" target="_blank">@amaslgbt</a></li>
+              <li><strong>Endereço:</strong> Rua A, nº 31A, Cohab I, 55540-000, Palmares-PE</li>
+              <li><strong>Formulário de cadastro:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMGfDnJiyOgD9WX5IcCdhi4tBFpq-IdbqbPxLwciBbU4o_1A/viewform" target="_blank">Cadastre-se</a></li>
+            </ul>
+          </div>
+      
+          <div id="contato-form">
+            <h2>Envie uma Mensagem</h2>
+            <form>
+              <input type="text" name="nome" placeholder="Nome" required />
+              <input type="email" name="email" placeholder="E-mail" required />
+              <input type="tel" name="telefone" placeholder="Telefone" required />
+              <input type="text" name="cidade" placeholder="Cidade" required />
+              <textarea name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
+              <button type="submit">Enviar</button>
+              <div id="mensagem-sucesso" class="mensagem-sucesso" style="display:none;">
+                Sua mensagem foi enviada com sucesso! Em breve entraremos em contato.
+            </div>
+            </form>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 AMAS LGBT</p>
+    </footer>
+
+    <script src="scriptForms.js"></script>
 </body>
 </html>
