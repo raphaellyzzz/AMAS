@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
 /* Seção Blog */
 #noticias {
 padding: 40px 0;
@@ -41,17 +44,18 @@ font-size: 1.1rem;
 
 /* Seção Eventos */
 #eventos-atividades {
-background: var(--azul-geral);
-padding: 40px 0;
+    background: var(--azul-geral);
+    padding: 40px 0;
 }
 
 .event {
-    background: #fcaac1 !important;
-    border: 2px solid #ff4e80;
+    background: #f8ccd4 !important;
+    border: 2px solid #f8ccd4;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
+    box-shadow: 0 7px 4px rgba(0,0,0,0.09);
 }   
 
 /* Responsividade */
@@ -65,7 +69,7 @@ padding: 40px 0;
 #noticias h1,
 #eventos-atividades h1,
 #info-lgbtfobia h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Cal Sans", sans-serif;
     line-height: 1.6;
     background-color: transparent; /* Remove o fundo */
     color: #000000; /* Cor rosa mais forte */
@@ -118,7 +122,7 @@ img.img-lgbtfobianao {
     padding: 20px;
     border: 2px solid #000000;
     border-radius: 10px; 
-    background-color: #f9f9f9; /* Cor de fundo */
+    background-color: #ffffff; /* Cor de fundo */
     max-width: 800px; /* Define uma largura máxima */
 }
 
